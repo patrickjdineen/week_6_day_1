@@ -7,16 +7,47 @@
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 let dog_names = ["Max","HAS","PuRple","dog"]
 
+
 function findWords(arr,str){
     for (let i=0; i< arr.length; i++){
-        if (arr[0].indexOf(str)>1){
-            console.log( arr[0])
+        if (str.includes(arr[i])){
+            console.log(`Match found ${arr[0]}`)
         } else{
             console.log('no matches')
         }
     }
 }
 findWords(dog_names, dog_string)
+
+// function findWords(arr,str){
+//     for (let i=0; i< arr.length; i++){
+//         if (arr[0].indexOf(str)>1){
+//             console.log( arr[0])
+//         } else{
+//             console.log('no matches')
+//         }
+//     }
+// }
+// findWords(dog_names, dog_string)
+// // function findWords(arr,str){
+// //     for (let i=0; i< dog_names.length; i++){
+// //         console.log(dog_string.includes(dog_names[i]))}
+// //     }
+
+// // let dog_func = dog_names.map( name => {
+// //     if (name[0] in dog_string){
+// //         console.log(name[0])} else{
+// //             console.log('no matches')
+// //         }
+// //     }
+// // })
+
+// let dog_name = dog_names.map( name => {
+//     if (name.indexOf(dog_string)){
+//         console.log(name)}else{
+//             console.log('bad')
+//         }
+//     })
 
 
 // //============Exercise #2 ============//
